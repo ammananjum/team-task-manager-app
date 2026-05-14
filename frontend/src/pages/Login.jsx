@@ -76,7 +76,8 @@ export default function Login() {
         password,
       });
 
-      localStorage.setItem("user", JSON.stringify(res.data.user));
+     localStorage.setItem("user", JSON.stringify(res.data.user));
+     localStorage.setItem("token", res.data.token);
 
       setLoginMessage("Login successful");
 
