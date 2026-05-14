@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./routes/ProtectedRoute";
-import Register from "./pages/Register";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -15,8 +14,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* HOME */}
     <Route path="/" element={<Home />} />
 
-    {/* REGISTER (FIRST AUTH PAGE) */}
-    <Route path="/register" element={<Register />} />
 
     {/* LOGIN */}
     <Route path="/login" element={<Login />} />
