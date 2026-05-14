@@ -154,7 +154,7 @@ export default function Dashboard() {
 
   const [profileFile,     setProfileFile]     = useState(null);
   const [profilePic,      setProfilePic]      = useState(
-    storedUser?.image ? `http://localhost:5000${storedUser.image}` : logoImg
+    storedUser?.image ? `https://backendzip--azoha7945.replit.app${storedUser.image}` : logoImg
   );
   const [openProfileMenu, setOpenProfileMenu] = useState(false);
   const [openNotifMenu,   setOpenNotifMenu]   = useState(false);
@@ -284,7 +284,7 @@ export default function Dashboard() {
       const newUser = { ...storedUser, ...updated };
       localStorage.setItem("user", JSON.stringify(newUser));
       setUserData(newUser);
-      if (updated.image) setProfilePic(`http://localhost:5000${updated.image}`);
+      if (updated.image) setProfilePic(`https://backendzip--azoha7945.replit.app${updated.image}`);
       showToast("✓ Profile saved");
     } catch { showToast("Failed to save"); }
   }, [storedUser]);
