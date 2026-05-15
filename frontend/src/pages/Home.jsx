@@ -169,12 +169,36 @@ export default function Home() {
           </div>
 
           <div>
-            <h3 className="font-bold text-white">Menu</h3>
-            <p className="cursor-pointer">Home</p>
-            <p className="cursor-pointer">Features</p>
-            <p className="cursor-pointer">About</p>
-            <p className="cursor-pointer">Contact</p>
-          </div>
+  <h3 className="font-bold text-white">Menu</h3>
+
+  <p
+    onClick={() => scrollTo("home")}
+    className="cursor-pointer hover:underline"
+  >
+    Home
+  </p>
+
+  <p
+    onClick={() => scrollTo("features")}
+    className="cursor-pointer hover:underline"
+  >
+    Features
+  </p>
+
+  <p
+    onClick={() => scrollTo("about")}
+    className="cursor-pointer hover:underline"
+  >
+    About
+  </p>
+
+  <p
+    onClick={() => scrollTo("contact")}
+    className="cursor-pointer hover:underline"
+  >
+    Contact
+  </p>
+</div>
 
           <div>
             <h3 className="font-bold text-white">Contact</h3>
