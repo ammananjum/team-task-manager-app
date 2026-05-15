@@ -86,7 +86,7 @@ export default function Home() {
         </p>
 
         <button
-          onClick={() => navigate("/dashboard")}
+          onClick={() => navigate("/login")}
           className="mt-10 bg-[#2B2B2B] text-[#B0B0B0] px-12 py-4 rounded-full text-lg hover:scale-105 transition"
         >
           Try It Now
